@@ -49,7 +49,4 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: protospace_42324_production
-  username: protospace_42324
-  password: <%= ENV["PROTOSPACE_42324_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
